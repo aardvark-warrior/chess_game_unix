@@ -1,0 +1,622 @@
+commit d5e6cfcd64282a9a862b090e1bb430881845a3f0
+Merge: 56608e0 a784c8f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Fri Apr 30 01:02:08 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 56608e0730f7ec8a08f2095feb3353852d5c574d
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Fri Apr 30 01:01:41 2021 -0400
+
+    Fixed logical issues in path detection so that it can handle movement of mystery piece
+
+commit a784c8f800fb2e75ce5664bac5b53b5ddc608ee1
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 30 00:03:20 2021 -0400
+
+    README
+
+commit 5b8df2d3d7e4e87ca436cf91a8bac7eb7672cd91
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 23:53:41 2021 -0400
+
+    Added description of major parts of project to README
+
+commit 05cc44dee601dce65c737070adbb1390407c7ec9
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 23:42:05 2021 -0400
+
+    updated README
+
+commit 67634b0e22a9bb35a7c8df07e1cacb91793d7ef6
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 23:41:01 2021 -0400
+
+    Added names to top of all edited source files
+
+commit 7a1e23bfe6da916195f4361cf861f80997d02ac3
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 23:16:33 2021 -0400
+
+    removed print lines for testing
+
+commit b1cfc764aba183798a0ec97ca5ab28ccbd5cfa01
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 23:07:07 2021 -0400
+
+    Changed invalid path check so that it is not dependent on piece type passed in but only on the movement observed and whether it is linear. This allows the board movement to be more robust so the possibility of a nonlinear mystery piece is handled correctly
+
+commit af2aa74c64f57af4763ee0510b24b47fc9e0798f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 22:43:09 2021 -0400
+
+    Fixed spacing issues in files, added comments to all helper functions in .h file and removed unnecesary start vs end position checking method and combined into one
+
+commit 4c5326ea946341eefafb994d75f784109947abd0
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 21:56:39 2021 -0400
+
+    Changed catched exception to print to standard error to pass autograder. Also massively simplified logic for in_mate by simply checking if in_check and in_stalemate
+
+commit dffc33ef194babb29ea6b95e8da550d344533380
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 21:26:18 2021 -0400
+
+    Revert "Revert "fixed syntax error in Knight and Bishop""
+    
+    This reverts commit 94f6ee6d3449812c6cdc89b6b70851387a493116.
+
+commit 94f6ee6d3449812c6cdc89b6b70851387a493116
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 21:25:51 2021 -0400
+
+    Revert "fixed syntax error in Knight and Bishop"
+    
+    This reverts commit 9ec1cd577f08de3fd0ca14c73d803a01c663108b.
+
+commit 9ec1cd577f08de3fd0ca14c73d803a01c663108b
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 21:25:43 2021 -0400
+
+    fixed syntax error in Knight and Bishop
+
+commit ba4240cac5180c10d8f1fdafa80dee5db9778b26
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 21:21:47 2021 -0400
+
+    simplified Bishop and Queen move_shape logic and changed to use abs() function from stdlib.h
+
+commit 1b7e536a2743b129bdc0d5b0b511d63db8fdcc34
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 20:59:36 2021 -0400
+
+    fixed King's move pattern logic
+
+commit d5ff040ae93949f9e48991fe8139f9ca3c7912ff
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 20:46:39 2021 -0400
+
+    Fixed control structure logic in checking for stalemate which was causing iteration to prematurely terminate and report false stalemate
+
+commit b41130637235e24f6708c795de19b957164e0990
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 19:17:52 2021 -0400
+
+    Committing board.cpp
+
+commit 42647e5bc3177803cb50368b61ce487133bddbe9
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 19:13:08 2021 -0400
+
+    added new line character before printing board
+
+commit 82ef3a1b93428b84acbe3173f640c71b04ed660c
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 19:01:47 2021 -0400
+
+    Removed two square initial pawn move logic since Arthur added to pawn.cpp already
+
+commit e23157a355e7c79962ae534e1c08aee350168ebf
+Merge: dea2e13 7af659a
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 18:58:07 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit dea2e13a1a92f63dc5e218fde299e3c7c29e76f1
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 18:56:54 2021 -0400
+
+    changed logic of pawn move pattern and capture pattern
+
+commit 7af659a38af0e4f4494cd39150997f61965a52e4
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 18:25:40 2021 -0400
+
+    created gitlog and readme
+
+commit 5576a5b2bd68edb5896cb129cb9e0f4cc3ebb1e0
+Merge: 1b1f382 8570934
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 18:08:11 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 1b1f38245e50a26c29f87846b7292f19a20f40de
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 18:07:53 2021 -0400
+
+    display has the letters and numbers on the side for readability
+
+commit 857093406f3ddb50b89f65551cbd6937ddee05be
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 18:06:51 2021 -0400
+
+    Added logic for promoting a pawn to a queen
+
+commit 95053df89a31a69c35d767beeb4376640c3cc412
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 18:01:53 2021 -0400
+
+    casted int to double in division (when checking diagonal movement) for Queen
+
+commit f478e47871fb9e099f8c49d8f12c25d24a48b573
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 18:00:55 2021 -0400
+
+    casted ints to doubles when dividing so e.g.: 3/2 = 1.5 and not 1
+
+commit 485460982ba6229aafdad6f88a5b67d5947629fe
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 17:45:40 2021 -0400
+
+    changed Knight movement path to not use abs() function from stdlib.h
+
+commit 9b3b4e992108849986e46ffc3a11aadb43a4b9b5
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 17:19:53 2021 -0400
+
+    Fixed logic in in_mate function so that it also checks if each move would capture own piece. Now game can detect simple 3 move checkmate!
+
+commit 7e6242ce40142f8bda3de3016b2e39ac3fe86baf
+Merge: ad390d4 94f2d0c
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 17:08:39 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit ad390d4428c1083f44a6704f88daa21921f73088
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 17:08:18 2021 -0400
+
+    board is wider
+
+commit 94f2d0c44b3b0a9570d8900672db3e2bc710c8d3
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 17:02:45 2021 -0400
+
+    Restored previous queen.cpp file because new logic will prevent some valid moves I think. Also removed an unnecessary valid_move check in Game.cpp
+
+commit 762161e55f996d89f1ec42ea4940bdabc3fd13d8
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 16:52:09 2021 -0400
+
+    no divide by - ):<
+
+commit d04dc1b96bec1c2ecdffa2e817bdfbda3c29ad6d
+Merge: 8a6e505 12eb192
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 16:29:08 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 8a6e5055364568b61dfb45add98b96ea8b5fdb04
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 16:28:41 2021 -0400
+
+    fixed Bishop move patter. minor changes to Queen.cpp comments
+
+commit 12eb1929617c786d63c0fb6ebbb9a42183e50564
+Merge: 0736522 4015a7f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 16:24:37 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 073652282379cd6e9a579cbfebc4ba79659296bf
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 16:23:58 2021 -0400
+
+    Added check for a piece that moves to the same position in the illegal_move_shape function rather than potentially throwing an exception in invalid_path when it isn't expected.
+
+commit 6b3dd7bec41bb9dcdec8c7110243c519275619e7
+Merge: 83503eb 4015a7f
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 16:22:52 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 4015a7fabd607a03b6d10385be7ccf54dfc74933
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 16:21:54 2021 -0400
+
+    fixed queen
+
+commit 83503ebec2a5b7a09c0eba263de4d3e4d2ba0d13
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 16:14:21 2021 -0400
+
+    Revert "fixed issue changing color_fg back to default when printing '-'"
+    
+    This reverts commit fd117e25eec8a60926b852cf8bc8c278e092a71d.
+
+commit fd117e25eec8a60926b852cf8bc8c278e092a71d
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 16:13:09 2021 -0400
+
+    fixed issue changing color_fg back to default when printing '-'
+
+commit 27e2b63b8b6a4209b6f1d415cd448a1bb224a876
+Merge: 85dbc0b 36ee607
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 16:02:24 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 85dbc0bdcf63f495e1b8ea377d7a2a076e895ca2
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 16:02:10 2021 -0400
+
+    Fixed issue with Knight pattern not being recognized by importing approriate library. Also fixed path check so that it stops if knight
+
+commit 36ee6070b0b1bf3233990a75e4f4b5474173af53
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 15:58:03 2021 -0400
+
+    changed board colors to black and white. piece colors white==red black==cyan
+
+commit a3a351caf4f855db14afd7b481ce866080296b37
+Merge: de7fe2c 5e4015d
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 15:44:00 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit de7fe2ccdb941b8b070edda1fd885bd2447cc926
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 15:43:42 2021 -0400
+
+    pawn can capture
+
+commit 5e4015d2c9ffedbefca48b9f3f53480a7cd6ce58
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 15:43:28 2021 -0400
+
+    fixed Knight 'invalid move pattern' issue. still need to fix 'path not clear' issue
+
+commit 8f54cca0bb11f94ee1f401da755977649cb24878
+Merge: f55b1ed e0c8970
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 15:29:13 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit e0c8970708775659e0c931c5c59136ff867fca83
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 15:28:14 2021 -0400
+
+    minor changes to Board.cpp
+
+commit f55b1ed3fc4717ccc7c5621cd94f3a2f3d3a7768
+Merge: c0c59fe b116241
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 15:26:18 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit c0c59fe9ec76091cecaf7561f54924edbbe45d35
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 15:25:53 2021 -0400
+
+    to pull
+
+commit b1162413e795da42085323695e570b7982d2fe4f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 15:22:40 2021 -0400
+
+    Added check to legal_move_shape to make sure the space it was moving to was empty. Also wrapped all thrown exceptions in if, else if structure to be super safe about accidentally throwing multiple exceptions
+
+commit d749f462c6208a8fe6936ea80a976e2e5046f841
+Merge: 1970250 c2e3d98
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 15:09:16 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 19702503d3069ee7e79c9875f6ea6a8f59c2bc55
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Thu Apr 29 15:08:23 2021 -0400
+
+    added code to change color of pieces
+
+commit c2e3d98ca23b1582f098c670736cce30040e6ce3
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 15:03:45 2021 -0400
+
+    Imported stlib so abs() function works properly, now pawn moving two squares in beginning loogic works seemingly. Also display works in conjunction with moves on board properly
+
+commit 7228d4c38a8822fb27ba25c29dfcf4a375bb7cc5
+Merge: 7158bb6 2984d0d
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 14:48:41 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 7158bb69591e236106192633f5cc0bd6ab0c9499
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 14:48:08 2021 -0400
+
+    Added special move checking for pawns moving two squares on first move. Also fixed issue with not using absolute value of distances when checking for piece obstruction of path
+
+commit 2984d0d72639507f48cc763c08399365d7c1321b
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 14:42:20 2021 -0400
+
+    display displays
+
+commit 29bb30c4c228b202b07a54360b87b47d9478d4ec
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 14:40:39 2021 -0400
+
+    push to be able to edit
+
+commit a538c6e74b367d37f8db6653aca5b000badbec28
+Merge: 8271c9b e74bf87
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 14:39:39 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 8271c9bff212c48e4531e0bfd750ca950e7dbfdb
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 14:37:39 2021 -0400
+
+    dispay is shown
+
+commit e74bf87ebe8d40e6a4300a6967ca62f7770f650d
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 14:18:55 2021 -0400
+
+    Added error handling in main function to catch chess exceptions as specified in instructions
+
+commit b10b1602ddaa96326a8671033948495e28bb9026
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 14:14:21 2021 -0400
+
+    Fixed segfault issue where attempted to access piece_name of piece pointer after deleting it, move can be carried out succesfully now
+
+commit 95356ff65c0947ded9412b9441c0eec568fc144d
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 13:45:38 2021 -0400
+
+    Removed testing code
+
+commit 1cca9963f845691162b13cddd17f63fd976e7505
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 13:44:47 2021 -0400
+
+    Finally found logical error in double for loop which wasn't checking valid moves correctly, now stale mate appears to work correctly
+
+commit d76800fb37e29540afa06972b9b4e3344da0b154
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 13:38:08 2021 -0400
+
+    Made logic for illegal_capture_shape check if captured piece is null within method to be consistent
+
+commit 51a466f4c4c32304fbadb138541973ea6916e031
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 13:31:28 2021 -0400
+
+    Fixed logical issues with checking if captured piece is actually null before calling legal_move_shape
+
+commit 7933f5fe285416d2a87be65d560bd777add5a288
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Thu Apr 29 12:48:14 2021 -0400
+
+    Extracted logic to check if a move would expose check to increase reusability
+
+commit 608c2665d0bfb35e5db433f78570c141b07ddb71
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Thu Apr 29 10:50:02 2021 -0400
+
+    io works
+
+commit d7fb207b6494c6239c15635ef79f30fd1d7664d7
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Wed Apr 28 18:28:36 2021 -0400
+
+    Fixed and simplified logic for check and mate functions so that they function properly.
+
+commit fd4ab2a5ddf6f4212ebcfad3937e7954b8fc2421
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Wed Apr 28 17:49:33 2021 -0400
+
+    Refactored all exception checking to separate helper methods to improve clarity and allow other methods to explicitly check which exceptions are necessary for their logic. Also made them return boolean result instead of throwing exception themselves since this is only necessary for make_move
+
+commit 659b509cc1c888e8ed4c6757fcea5d5a77e3f61f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Wed Apr 28 16:59:40 2021 -0400
+
+    Fixed logical issue in board.cpp where () operator wasn't returnin null pointer if there was no piece. Fixed segfault issue with king search
+
+commit 4bfdc937547136824b3f8a0546bc141ddd950b6d
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Wed Apr 28 15:53:27 2021 -0400
+
+    Fixed issues with copy constructor, assignment operator, and destructor for board so no more segfault errors
+
+commit 45d007df8e8ffa6ff95b7f9f81eacc090e643405
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Wed Apr 28 10:05:11 2021 -0400
+
+    comilation successful
+
+commit 7f3c777876acfb8b0607ab47474ac5b7f31bba2c
+Merge: c2e01fc 7ea18c3
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Tue Apr 27 22:50:16 2021 -0400
+
+    to push
+
+commit c2e01fc9c95a272d00201c019a225c54ed9e5667
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Tue Apr 27 22:47:45 2021 -0400
+
+    file io errors; need to fix
+
+commit 7ea18c3575f5561e2820a86f1fb019d6f8cf3440
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 22:20:14 2021 -0400
+
+    changed find() to at() in operator= definition
+
+commit 98a25f12876ebd8e021ce347120a9f7be017eb35
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 21:53:32 2021 -0400
+
+    used 'find()' function to find element in constant map. Board.cpp now compiles
+
+commit 331377fc3f04be3b113e47002441c5019a53cce5
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Tue Apr 27 21:52:12 2021 -0400
+
+    added loading
+
+commit e6924a7cb28452718461fea36f908fd75ef9cd4f
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 21:49:05 2021 -0400
+
+    Added changes that used rm_piece to set positions at board to be empty
+
+commit a5ae69c875d1639f251c4fccfde0a683f87473d9
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 21:42:02 2021 -0400
+
+    added rm_piece function to Board.cpp
+
+commit bb7356f84727a917e9b1651f678bca1a6f3d9362
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Tue Apr 27 21:35:11 2021 -0400
+
+    fixed header piece files
+
+commit 949f8ff3dbd548b342f104cb4b8ffdda4b99569e
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 21:14:26 2021 -0400
+
+    Fixed functions so they are declared correctly in Game.cpp, fixed many warnings in Game.cpp and const protected all helper functions
+
+commit d3ebfac6b39783ea6e8c0a4df99181979121dd0e
+Merge: c1d8b01 0a6cb05
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 19:07:24 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit 0a6cb0577f5e1f16df5f05a5d3b3786d4c023e18
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 18:30:32 2021 -0400
+
+    fixed syntax/braces issues, changed add_piece and operator() definitions. still need to do display function
+
+commit c1cdaed5b0817302dab98012efc8e02755ac8e7b
+Merge: faa8656 ceb2ceb
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 17:44:58 2021 -0400
+
+    Merge branch 'master' of https://github.com/jhu-ip/2021-spring-final-awang91-krosen23-tnguy228
+
+commit faa8656a8f032f37b6536e99c04e800e48012e77
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 17:44:31 2021 -0400
+
+    finished most Board.cpp functions
+
+commit c1d8b019b68c07a48eebbebcc5b86f9346bc72bb
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 17:30:22 2021 -0400
+
+    Fixed logical issues with iteration over board
+
+commit ceb2cebcfedddf774f6f983bc6b68079aa57e0ff
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 17:26:11 2021 -0400
+
+    Added copy constructor, assignment operator, and destructor for board so that functions in Game can easily store a copy of the board. Prototypes added to .h and implementations added to .cpp
+
+commit 6e6b50f391033a05a1a2147d78704574e0e31719
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 17:14:32 2021 -0400
+
+    Added function prototypes for helper functions in Game.cpp:
+
+commit bfe3c83341785d51bd8833b0e717ee90265a2fc9
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Tue Apr 27 17:13:28 2021 -0400
+
+    Added in_check, in_mate, in_stalemate and refactored error checking in make_move to separate functions
+
+commit b5e6f45fdf697bd11f35d973d1325ade93ad8b35
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 27 16:06:30 2021 -0400
+
+    Minor additions to Board.cpp
+
+commit 471281999bce7edfde92f70b806bd509dc493028
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Sun Apr 25 21:03:27 2021 -0400
+
+    Added all logic and exception cases for make_move function and fixed the logic of checking if path is clear
+
+commit 80628eba1cbc04d66c4ed1cce69991a32fde057b
+Author: Kaden Rosenblatt <krosen23@jhu.edu>
+Date:   Sat Apr 24 14:25:03 2021 -0400
+
+    Implemented all exception checking in make_move function, some logic needs to be checked for obstructing pieces
+
+commit 0acdc358f3fc9aecf0096905d4186ea1c05c6765
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 23 20:45:10 2021 -0400
+
+    added queen implementation
+
+commit f7a23ba1f2cee61b81bb80211a2b3f4ea1d25438
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 23 20:43:47 2021 -0400
+
+    added King implementation
+
+commit d1ea48f173f0383b248b626cf10a7979e4336aa3
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 23 20:42:07 2021 -0400
+
+    added bishop
+
+commit 47e2dade3cfb99a82770a8b7b1f1d9d2c9ab1c67
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 23 20:40:41 2021 -0400
+
+    added Rook implementation
+
+commit b64c9876ab44c172701cc9c8db1692993ab0c28d
+Author: Taylor Nguyen <taylornguyen904@gmail.com>
+Date:   Fri Apr 23 20:36:57 2021 -0400
+
+    implemented Pawn and Knight
+
+commit 39ab2d2659a91a23736d5171a97237fb64468690
+Author: Arthur Wang <awang91@jhu.edu>
+Date:   Tue Apr 20 23:28:02 2021 -0400
+
+    Initialized with the starter codes

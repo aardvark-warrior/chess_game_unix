@@ -1,0 +1,19 @@
+TEAM:
+Arthur Wang: awang91
+Kaden Rosenblatt: krosen23
+Taylor Nguyen: tnguy228
+
+DESIGN:
+
+For the display in Board.cpp, we if a map existed to a piece. If a map exists, then we know there is a piece, and so we display the character representation of that piece. If not, we use the character '-'. We used Terminal to create the checkered effect, the checkered effect made by examining whether a row and column had the same parity or not. If they had the same parity, we would color it a certain color; If not, we would color that part of the board a different color.
+
+
+For each piece.cpp file, we analyzed whether a certain piece could travel to its desired destination, binding each piece to its personal restrictions. If the destination failed these restrictions, the piece was not allowed to move. For pawn, we had to implement specific logic for whether a capture was legal since it was different from its normal movement. 
+
+We approached loading a game as creating a whole new game. In load, we create a temporary board that places all the necessary pieces in the appropriate spots, and then copy this board to the actual game board to load a game.
+
+We defined a board copy constructor, assignment operator, and destructor in order to cleanly create copies of the game and restore to old states (which was necessary for functions in Game.cpp). We also additionally defined a remove_piece function to safely deallocate memory for a piece at a location on the board because this was necessary to actually change the board in make_move. 
+
+In Game.cpp we moved all of the error checking into separate functions in order to improve readability and reusability of code. In the make_move function, all of these errors were checked for the move and an exception was thrown if necessary. In in_check, we simply iterated over all enemy pieces and checked if a legal capture of the king was possible by testing it using these error helper methods. For in_stalemate we iterated over all the pieces a player has and checked whether that piece could move to any piece on the board (again using the error checking helper functions to verify). If any of these moves were valid, it wasn't stalemate. In_mate was implemented simply by checking whether the king was in check and in stalemate since if it was in stalemate there were no legal moves to block the check or move the king out of check.
+
+In Main.cpp we simply caught all errors thrown by the make_move function and reported them to the user of the program without crashing.
